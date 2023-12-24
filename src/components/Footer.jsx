@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-
+import {openLinkInNewBrowserTab} from "./About";
+import  {links} from "../DataProvider/linkList"
 const Footer = () => {
   return (
     <div className='relative p-[3rem] bg-[#343d68] overflow-hidden cursor-pointer'>
@@ -19,9 +20,9 @@ const Footer = () => {
           <div>
             <div className='flex gap-5 footer-icons'>
               <i className="text-3xl text-white transition-all duration-500 fa-brands fa-github fa-sm hover:scale-125"/>
-              <i className="text-3xl text-white transition-all duration-500 fa-brands fa-linkedin hover:scale-125"/>
-              <i className="text-3xl text-white transition-all duration-500 fa-regular fa-envelope hover:scale-125"/>
-              <i className="text-3xl text-white transition-all duration-500 fa-brands fa-whatsapp hover:scale-125"/>
+              <i className="text-3xl text-white transition-all duration-500 fa-brands fa-linkedin hover:scale-125" onClick={()=>{openLinkInNewBrowserTab(links.profile)}}/>
+              <i className="text-3xl text-white transition-all duration-500 fa-regular fa-envelope hover:scale-125" onClick={() => window.location = 'mailto:shashanksaagr398@gmail.com'}/>
+              <i className="text-3xl text-white transition-all duration-500 fa-brands fa-whatsapp hover:scale-125" onClick={()=>{openLinkInNewBrowserTab(links.whatsApp)}}/>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import circle from "../images/userAsset/circle.png";
 import cube from "../images/userAsset/cube.png";
 import plus from "../images/userAsset/plus.png";
 import zigzag from "../images/userAsset/zigzags.png";
-import  {links} from "../DataProvider/linkList"
+import  {links} from "../DataProvider/linkList";
 
 export const openLinkInNewBrowserTab = (url) => {
   const linkedInUrl = url;
@@ -49,7 +49,7 @@ const About = () => {
         <div className="flex flex-shrink text-left sm:text-left ">
           &nbsp; &nbsp; 🎓 Recent Information Science Engineering graduate from NMAMIT, now crafting software in the dynamic world of startup. My portfolio is a fusion of academic brilliance and hands-on project mastery, ready to infuse innovation into solutions. Eagerly embarking on a perpetual journey of growth as a software virtuoso. 💻✨
         </div>
-        <div class="btn-pink" onClick={()=>{openLinkInNewBrowserTab(links[0].profile)}}>
+        <div class="btn-pink" onClick={()=>{openLinkInNewBrowserTab(links.profile)}}>
           Hire Me
         </div>
       </div>
