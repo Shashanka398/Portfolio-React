@@ -35,7 +35,7 @@ const Info = () => {
              
         </div>
         <div>
-                <button className='mt-4 btn-pink-res' onClick={()=>{openLinkInNewBrowserTab(links[0].resume)}} >View Resume</button>
+        <button className='mt-4 btn-pink-res' onClick={() => openLinkInNewBrowserTab(links.resume)}>View Resume</button>
               </div>
       </div>
       <div className='skills-con flex flex-wrap m-auto morder-3 h-[25%] w-[75%] relative gap-[2rem] justify-center '>
